@@ -1,0 +1,79 @@
+$abs-position: absolute;
+$color-white: #FFFFFF;
+
+@font-face {
+    font-family: "InterV";
+    src: local("InterV"), url("../../fonts/Inter-V.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: local("InterBold"), url("../../fonts/Inter-Bold.ttf") format("truetype");
+}
+
+header {
+    position: $abs-position;
+    font-family: InterV;
+    height: 60px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180deg, #BB1E1E 71.29%, #B21919 99.95%);
+}
+
+.h2-header {
+    position: $abs-position;
+    font-family: InterBold;
+    height: 21px;
+    left: 15%;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.136px;
+    color: $color-white;
+}
+
+.p-header {
+    position: $abs-position;
+    font-family: InterV;
+    height: 21px;
+    left: 35%;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.119px;
+    color: $color-white;
+}
+
+button {
+    position: $abs-position;
+    font-family: InterBold;
+    right: 25%;
+    width: 69px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1D1D1B;
+    border-radius: 8px;
+    border: none;
+    top: 15%;
+}
+
+h3 {
+    position: $abs-position;
+    font-family: InterBold;
+    height: 20px;
+    right: 15%;
+    top: calc(50% - 20px/2);
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-white;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .header {
+        // left: calc(50%);
+        width: 100%;
+    }
+}

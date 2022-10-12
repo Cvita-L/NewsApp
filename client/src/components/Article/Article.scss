@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "InterV";
+    src: local("InterV")
+        url("../../fonts/Inter-V.ttf") format("truetype");
+}
+
+.article-div {
+    position: relative;
+    display: inline-block;
+    width: 322px;
+    height: 250px;
+    margin: 15px 15px 15px 15px;
+    box-shadow: 0px 1px 2px -1px #C8CAD1;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 100% 55%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.article-div:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
+.article-title-div {
+    position: absolute;
+    bottom: 0%;
+}
+
+.article-title-text {
+    font-family: InterV;
+    font-size: 14px;
+    line-height: 20px;   
+    letter-spacing: -0.11px;   
+    color: #000000;
+    margin: 10px 10px 10px 10px;
+}
+
+.article-author-text {
+    font-family: InterV;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.0675px;
+    color: #1D1D1B;
+    margin: 10px 10px 10px 10px;
+}

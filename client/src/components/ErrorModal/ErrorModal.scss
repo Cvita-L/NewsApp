@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "InterV";
+    src: local("InterV"), url("../../fonts/Inter-V.ttf") format("truetype");
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 30%;
+    width: 40%;
+    height: 215px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.error-header {
+    // position: absolute;
+    margin: 0;
+    height: 45px;
+    font-family: InterV;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #BB1E1E 71.29%, #B21919 99.95%);
+}
+
+.error-h2 {
+    // position: $abs-position;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-family: InterV;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: -0.136px;
+    color: #FFFFFF;
+}
+
+.error-div {
+    // position: absolute;
+    background-color: #FFFFFF;
+    display: block;
+    height: 170px;
+}
+
+.error-p {
+    padding: 10%;
+    font-family: Inter;
+    font-size: 17px;
+}
+
+.close-button {
+    // position: absolute;
+    font-family: Inter;
+    background: #BB1E1E;
+    border-radius: 6px;
+    top: 60%;
+    left: 80%;
+    height: 40px;
+    width: 95px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
+}
